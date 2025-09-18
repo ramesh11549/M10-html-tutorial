@@ -1,34 +1,398 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>rowspan_colspan</title>
-</head>
-<body>
-    <table border="1" cellspacing = "0" cellpadding="10">
-    <thead>
+  </head>
+  <body>
+    <!-- Marks 1 -->
+    <table border="1" cellspacing="0" cellpadding="10">
+      <thead>
+        <caption>
+          Marks Table
+        </caption>
         <tr>
-            <th>Name</th>
-            <th>Subject</th>
-            <th>Marks</th>
+          <th>Name</th>
+          <th>Subject</th>
+          <th>Marks</th>
         </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="3">Mark Smith</td>
+          <td>Maths</td>
+          <td>100</td>
+        </tr>
+        <tr>
+          <td>Science</td>
+          <td>80</td>
+        </tr>
+        <tr>
+          <td>English</td>
+          <td>69</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <td>-</td>
+        <td>-</td>
+        <td>249</td>
+      </tfoot>
+    </table>
+    <!-- Marks 1 end  -->
+
+    <br /><br />
+    <br /><br />
+    <!-- Ian  -->
+    <table border="1" cellspacing="0" cellpadding="10">
+      <caption>
+        Ian's Timetable
+      </caption>
+      <thead>
+        <th colspan="1"></th>
+        <th colspan="1"></th>
+        <th colspan="3">Morning</th>
+        <th colspan="1">Lunch</th>
+        <th colspan="4">afternoon</th>
+        <th colspan="3">Evening</th>
+      </thead>
+      <tbody>
+        <!-- Row 1 -->
+        <tr>
+          <td></td>
+          <td></td>
+          <td>9-11am</td>
+          <td>10-11 am</td>
+          <td>11-12 am</td>
+          <td>1-2pm</td>
+          <td>2-3pm</td>
+          <td>3-4pm</td>
+          <td>4-5 pm</td>
+          <td>5-6pm</td>
+          <td>6-7pm</td>
+          <td>7-8</td>
+          <td>8-9</td>
+        </tr>
+        <!-- Row 2 -->
+        <tr>
+          <td rowspan="2">work</td>
+          <td>Monday</td>
+          <td colspan="3"><center>Development Meeting</center></td>
+          <td></td>
+          <td colspan="3">client meeting</td>
+          <td>commute</td>
+          <td colspan="3"><center>Free</center></td>
+        </tr>
+        <!-- Row 3 -->
+        <tr>
+          <td>Tuesday</td>
+          <td colspan="3"><center>In office</center></td>
+          <td></td>
+          <td colspan="7"><center>In office</center></td>
+        </tr>
+        <!-- Row 4 -->
+        <tr>
+          <td rowspan="2">Lecture</td>
+          <td>wednesday</td>
+          <td colspan="3"><center>CSC205</center></td>
+          <td></td>
+          <td colspan="7"><center>Preparation</center></td>
+        </tr>
+        <!-- Row 5 -->
+        <tr>
+          <td>Thursday</td>
+          <td colspan="3"><center>MAM200</center></td>
+          <td></td>
+          <td colspan="3"><center>Tutorial for MAM200</center></td>
+          <td colspan="4"><center>Free</center></td>
+        </tr>
+
+        <!-- Row 6 -->
+        <tr>
+          <td>Research</td>
+          <td>Friday</td>
+          <td colspan="3"><center>Research</center></td>
+          <td></td>
+          <td colspan="7"><center>Research</center></td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- Ian end -->
+    <br /><br /><br /><br />
+    <!-- Design -->
+    <table border="1" cellspacing="0" cellpadding="10">
+      <caption>
+        Table design
+      </caption>
+      <!-- Row 1 -->
+      <tr>
+        <td rowspan="9"></td>
+        <td rowspan="8"></td>
+        <td rowspan="7"></td>
+        <td rowspan="6"></td>
+        <td rowspan="5"></td>
+        <td rowspan="4"></td>
+        <td>AH</td>
+        <td rowspan="4"></td>
+        <td rowspan="5"></td>
+        <td rowspan="6"></td>
+        <td rowspan="7"></td>
+        <td rowspan="8"></td>
+        <td rowspan="10"></td>
+      </tr>
+      <!-- Row 2 -->
+      <tr>
+        <td><center>H</center></td>
+      </tr>
+      <!-- Row 3 -->
+
+      <tr>
+        <td><center>GH</center></td>
+      </tr>
+
+      <!-- Row 4 -->
+      <tr>
+        <td><center>N</center></td>
+      </tr>
+      <!-- Row 5 -->
+      <tr>
+        <td colspan="3"><center>O</center></td>
+      </tr>
+      <!-- Row 6 -->
+      <tr>
+        <td colspan="5"><center>P</center></td>
+      </tr>
+      <!--Row 7 -->
+      <tr>
+        <td colspan="7"><center>Q</center></td>
+      </tr>
+      <!-- Row 8-->
+      <tr>
+        <td colspan="2">R</td>
+        <td>S</td>
+        <td>T</td>
+        <td>U</td>
+        <td>V</td>
+        <td>W</td>
+        <td colspan="2">X</td>
+      </tr>
+      <!-- Row 9 -->
+      <tr>
+        <td colspan="11"><center>Y</center></td>
+      </tr>
+      <!-- Row 10 -->
+      <tr>
+        <td colspan="2">Z</td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+        <td>10</td>
+      </tr>
+    </table>
+    <!-- Design -->
+    <br /><br /><br /><br />
+    <!-- Timetable Table -->
+    <table border="1" cellspacing="0" cellpadding="10">
+      <thead>
+        <tr>
+          <th colspan="6">Time table</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="6">Hours</td>
+          <td>Mon</td>
+          <td>Tue</td>
+          <td>Wed</td>
+          <td>Thu</td>
+          <td>Fri</td>
+        </tr>
+        <tr>
+          <td>English</td>
+          <td>English</td>
+          <td>English</td>
+          <td>English</td>
+          <td>English</td>
+        </tr>
+        <tr>
+          <td>Maths</td>
+          <td>Maths</td>
+          <td>Maths</td>
+          <td>Maths</td>
+          <td>Maths</td>
+        </tr>
+        <tr>
+          <td colspan="5"><center>Lunch</center></td>
+        </tr>
+        <tr>
+          <td>Marathi</td>
+          <td>Marathi</td>
+          <td>Marathi</td>
+          <td>Marathi</td>
+          <td rowspan="2">Project</td>
+        </tr>
+        <tr>
+          <td>Geography</td>
+          <td>Geography</td>
+          <td>Geography</td>
+          <td>Geography</td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- Timetable table end -->
+    <br /><br /><br /><br />
+    <!-- Khandelwal Table Start -->
+    <table border="1" cellspacing="0" cellpadding="10">
+      <!-- captions -->
+
+      <thead>
+        <th colspan="4">Table using colspan and rowspan</th>
+      </thead>
+      <tbody>
+        <th colspan="4">Khandelwal Self Store</th>
+        <tr>
+          <td>Item</td>
+          <td>Qty</td>
+          <td>Price</td>
+          <td>Total</td>
+        </tr>
+        <tr>
+          <td>Sugar</td>
+          <td>5kg</td>
+          <td>50</td>
+          <td>250</td>
+        </tr>
+        <tr>
+          <td>Cooking oil</td>
+          <td>2kg</td>
+          <td>200</td>
+          <td>400</td>
+        </tr>
+        <tr>
+          <td>Soap</td>
+          <td>4pcs</td>
+          <td>40</td>
+          <td>160</td>
+        </tr>
+        <tr>
+          <td colspan="3">Sub Total</td>
+          <td>810</td>
+        </tr>
+        <tr>
+          <td colspan="2">Tax</td>
+          <td>5%</td>
+          <td>41</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Total Bill</td>
+          <td>851</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <!-- Khandelwal table end -->
+  </body>
+  <br /><br /><br /><br />
+  <!-- student table info -->
+  <table border="1" cellspacing="0" cellpadding="10">
+    <caption>
+      Student Info
+    </caption>
+    <thead>
+      <th colspan="2">Name</th>
+      <th>Age</th>
+      <th colspan="2">Course</th>
     </thead>
     <tbody>
-        <tr>
-            <td rowspan="3">Mark Smith</td>
-            <td>Maths</td>
-            <td>100</td>
-        </tr>
-        <tr>
-            <td>Science</td>
-            <td>80</td>
-        </tr>
-        <tr>
-            <td>English</td>
-            <td>69</td>
-        </tr>
+      <tr>
+        <td>Ninja</td>
+        <td>1</td>
+        <td>20</td>
+        <td>c++</td>
+        <td>Python</td>
+      </tr>
+      <tr>
+        <td>Ninja</td>
+        <td>2</td>
+        <td>31</td>
+        <td colspan="2"><center>Java</center></td>
+      </tr>
+      <tr>
+        <td>Ninja</td>
+        <td>3</td>
+        <td>29</td>
+        <td>Js</td>
+        <td>R</td>
+      </tr>
     </tbody>
-    </table>
-</body>
+  </table>
+  <!-- Student Table end -->
+
+  <br /><br /><br /><br />
+  <!-- Build Table Start -->
+  <table border="1" cellspacing="0" cellpadding="10">
+    <caption>
+      Build table
+    </caption>
+    <thead>
+      <tr>
+        <th>Build Name</th>
+        <th>Table Name</th>
+        <th>Queries</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="4">Build Name</td>
+        <td rowspan="2">Table Name1</td>
+        <td>query1</td>
+      </tr>
+      <tr>
+        <td>query2</td>
+      </tr>
+      <tr>
+        <td rowspan="2">Table Name2</td>
+        <td>query1</td>
+      </tr>
+      <tr>
+        <td>query2</td>
+      </tr>
+    </tbody>
+  </table>
+  <!-- tfoot if required -->
+  <!-- Build table end -->
+
+  <br><br><br><br>
+  <!-- group data -->
+   <table border="1" cellspacing = "0" cellpadding="10">
+    <caption>Group Table</caption>
+    <thead>
+         <tr>
+            <td rowspan="2">Group1</td>
+            <td>data1</td>
+            <td>data2</td>
+         </tr>
+         <tr>
+            <td>data3</td>
+            <td>data4</td>
+         </tr>
+          <tr>
+            <td rowspan="2">Group2</td>
+            <td>data5</td>
+            <td>data6</td>
+         </tr>
+         <tr>
+            <td>data7</td>
+            <td>data8</td>
+         </tr>
+    </thead>
+   </table>
 </html>
